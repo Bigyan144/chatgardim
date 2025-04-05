@@ -1,7 +1,7 @@
 // Configuration
 const users = [
     { username: "bigyan", password: "10" },
-    { username: "bigyan", password: "dai" },
+    { username: "herobigyan", password: "dai" },
     { username: "dhoggarey", password: "bigyandai" }
 ];
 
