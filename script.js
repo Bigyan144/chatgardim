@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Configuration
 const users = [
     { username: "bigyan", password: "10" },
@@ -75,6 +76,22 @@ function init() {
 
 // Handle login
 function handleLogin(e) {
+=======
+let users = [
+    { username: "hahasins", password: "hahasins123" },
+    { username: "977nepal", password: "123456789" },
+    { username: "bigyan", password: "10" }
+  ];
+  
+  let currentUser = null;
+  
+  let loginForm = document.getElementById("login-form");
+  let usernameInput = document.getElementById("username");
+  let passwordInput = document.getElementById("password");
+  let loginError = document.getElementById("login-error");
+  
+  loginForm.addEventListener("submit", function (e) {
+>>>>>>> 7d40ee66876d97da8c62b5996c40a6229d0ce128
     e.preventDefault();
     const username = usernameInput.value.trim();
     const password = passwordInput.value.trim();
@@ -242,6 +259,7 @@ function loadFeedPosts() {
         feedPosts.innerHTML = '<div class="text-center text-gray-500 py-10">No posts yet. Be the first to share!</div>';
         return;
     }
+<<<<<<< HEAD
     
     posts.forEach(post => {
         const postElement = document.createElement('div');
@@ -371,3 +389,12 @@ function initUserAvatar() {
 
 // Initialize the app
 document.addEventListener('DOMContentLoaded', init);
+=======
+  });
+  
+  function extractYouTubeID(url) {
+    let match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|v\/))([\w-]{11})/);
+    return match ? match[1] : null;
+  }
+  
+>>>>>>> 7d40ee66876d97da8c62b5996c40a6229d0ce128
