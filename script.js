@@ -1,7 +1,7 @@
 let users = [
-    { username: "alice", password: "123" },
-    { username: "bob", password: "456" },
-    { username: "charlie", password: "789" }
+    { username: "hahasins", password: "hahasins123" },
+    { username: "977nepal", password: "123456789" },
+    { username: "bigyan", password: "10" }
   ];
   
   let currentUser = null;
