@@ -1,0 +1,145 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Chat Bubbles */
+.chat-bubble-sent {
+    background-color: #3b82f6;
+    color: white;
+    border-top-right-radius: 0;
+}
+
+.chat-bubble-received {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    border-top-left-radius: 0;
+}
+
+/* Feed Styles */
+.post-card {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.post-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3b82f6;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+.post-media {
+    width: 100%;
+    border-radius: 8px;
+    margin: 8px 0;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.post-actions {
+    display: flex;
+    padding: 8px 0;
+    border-top: 1px solid #eee;
+    margin-top: 8px;
+}
+
+.post-action {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    color: #666;
+    cursor: pointer;
+}
+
+.post-action:hover {
+    color: #3b82f6;
+}
+
+.comment-section {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+}
+
+.comment-input {
+    display: flex;
+    margin-top: 8px;
+}
+
+/* YouTube Player */
+#youtube-player {
+    background: #000;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+#youtube-url {
+    font-size: 14px;
+}
+
+#play-btn {
+    transition: background 0.2s;
+}
+
+#play-btn:hover {
+    background: #cc0000 !important;
+}
+
+/* Tab Navigation */
+.tab-button {
+    transition: all 0.2s;
+}
+
+.tab-button.active {
+    color: #3b82f6;
+    border-bottom: 2px solid #3b82f6;
+}
+
+/* Scrollbars */
+#chat-messages, #feed-posts {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e0 #f7fafc;
+}
+
+#chat-messages::-webkit-scrollbar,
+#feed-posts::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-messages::-webkit-scrollbar-track,
+#feed-posts::-webkit-scrollbar-track {
+    background: #f7fafc;
+}
+
+#chat-messages::-webkit-scrollbar-thumb,
+#feed-posts::-webkit-scrollbar-thumb {
+    background-color: #cbd5e0;
+    border-radius: 4px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.message-enter {
+    animation: fadeIn 0.3s ease-out;
+}
